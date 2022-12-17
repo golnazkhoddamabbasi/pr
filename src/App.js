@@ -81,7 +81,7 @@ try{
     <div className="App">
       <Navbar/>
       <Routes>
-      <Route path='/' element={<Navigate to="/componys" />} />
+      
       <Route path='/componys' element={<Componys data={getComponys}/>}/>
       <Route path='/componys/add' element={<Addcompony
        setComponyInfo={setComponyInfo} 

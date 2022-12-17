@@ -14,18 +14,18 @@ export const getAllComponys = () => {
   };
 
 
-  export const getCompony = (companyId) => {
+  export const getCompony = (_id) => {
     const up = "http://94.101.184.60:1001/api/Expo/Web";
-    const url = `${up}/${companyId}`;
+    const url = `${up}/${_id}`;
     return axios.get(url);
    };
  
 
  
-    export const updateCompony = (compony , companyId) => {
+    export const updateCompony = ( companyId) => {
     const up = "http://94.101.184.60:1001/api/Expo/Web/UpdateCompany";
     const url =`${up}${companyId}`
-    return axios.put(url , compony );
+    return axios.put(url ,companyId  );
   };
   
 
